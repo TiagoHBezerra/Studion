@@ -5,43 +5,48 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
   <title>Studion</title>
 </head>
 
 <body>
-  <nav>
-    <h1>
-      Studi
-      <span> on </span>
-      <span> Eventos </span>
-    </h1>
-    <ul>
+  <nav class="navbar">
+    <div class="logo">
+      <h1 class="logo-studion">
+        Studi<span class="copy--primary">on</span>
+      </h1>
+      <h3 class="logo-studion__subtitle">Eventos</h3>
+    </div>
+    <ul class="navbar__links">
       <li>
-        <a href="#Empresa"> Empresa </a>
+        <a href="#Empresa">Empresa</a>
       </li>
       <li>
-        <a href="#Eventos"> Eventos </a>
+        <a href="#Eventos">Eventos</a>
       </li>
       <li>
-        <a href="#Galeria"> Galeria </a>
+        <a href="#Galeria">Galeria</a>
       </li>
       <li>
-        <a href="#Depoimentos"> Depoimentos </a>
+        <a href="#Depoimentos">Depoimentos</a>
       </li>
       <li>
-        <a href="#Contatos"> Contatos </a>
+        <a href="#Contatos">Contatos</a>
       </li>
     </ul>
   </nav>
   <header>
     <div id="slider">
       <div class="slide">
-        <h6><span>Próximo evento</span> - Dia 25 de setembro às 19h</h6>
-        <h2>
-          <span>Creative</span>
-          Minds
-        </h2>
-        <button>Saiba Mais</button>
+        <img class="slide__background-image" src="./images/banner.jpg" alt="Studion Banner">
+        <div class="slide__copy">
+          <h6><span class="copy--primary">Próximo evento</span> - Dia 25 de setembro às 19h</h6>
+          <h2>
+            <span class="copy--primary">Creative</span>
+            Minds
+          </h2>
+          <button class="btn btn--slide">Saiba Mais</button>
+        </div>
       </div>
     </div>
   </header>
@@ -90,9 +95,8 @@
   </main>
   <footer>
     <h2>
-      Studi
-      <span> on </span>
-      <span> Eventos </span>
+      Studi<span>on</span>
+      <span>Eventos</span>
     </h2>
     <form>
       <label>receba news e promoções</label>
