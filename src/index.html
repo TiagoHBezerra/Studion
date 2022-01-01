@@ -11,29 +11,31 @@
 
 <body>
   <nav class="navbar">
-    <div class="logo">
-      <h1 class="logo-studion">
-        Studi<span class="copy--primary">on</span>
-      </h1>
-      <h3 class="logo-studion__subtitle">Eventos</h3>
+    <div class="container navbar__container">
+      <div class="logo">
+        <h1 class="logo-studion">
+          Studi<span class="copy--primary">on</span>
+        </h1>
+        <h3 class="logo-studion__subtitle">Eventos</h3>
+      </div>
+      <ul class="navbar__links">
+        <li>
+          <a href="#Empresa">Empresa</a>
+        </li>
+        <li>
+          <a href="#Eventos">Eventos</a>
+        </li>
+        <li>
+          <a href="#Galeria">Galeria</a>
+        </li>
+        <li>
+          <a href="#Depoimentos">Depoimentos</a>
+        </li>
+        <li>
+          <a href="#Contatos">Contatos</a>
+        </li>
+      </ul>
     </div>
-    <ul class="navbar__links">
-      <li>
-        <a href="#Empresa">Empresa</a>
-      </li>
-      <li>
-        <a href="#Eventos">Eventos</a>
-      </li>
-      <li>
-        <a href="#Galeria">Galeria</a>
-      </li>
-      <li>
-        <a href="#Depoimentos">Depoimentos</a>
-      </li>
-      <li>
-        <a href="#Contatos">Contatos</a>
-      </li>
-    </ul>
   </nav>
   <header>
     <div id="slider">
@@ -51,33 +53,39 @@
     </div>
   </header>
   <main>
-    <section id="Eventos">
-      <ul>
+    <section id="counter">
+      <ul class="container counter__container">
         <li>
-          <h3>+ de 500</h3>
-          eventos realizados
+          <h3>
+            + de 500
+            <small>eventos realizados</small>
+          </h3>
         </li>
         <li>
-          <h3>+ de 1.000.000</h3>
-          de ingrssos vendidos
+          <h3>
+            + de 1.000.000
+            <small>de ingrssos vendidos</small>
+          </h3>
         </li>
         <li>
-          <h3>+ de 300</h3>
-          empresar atendidas
+          <h3>
+            + de 300
+            <small>empresas atendidas</small>
+          </h3>
         </li>
       </ul>
     </section>
-    <section>
-      <div>
-        <img src="images/institutional.jpg" alt="">
-        <h6>Fazemos seun evento acontecer</h6>
+    <section class="container institutional">
+      <img class="institutional__image" src="images/institutional.jpg" alt="Studion institutional">
+      <div class="institutional__copy">
+        <h6>Fazemos seu evento acontecer</h6>
         <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus,
           atque fugit exercitationem, voluptate laudantium id delectus, hic
           alias repellat cum eaque recusandae!
         </p>
-        <button>Saiba Mais</button>
+        <button class="btn btn--intitutional">Saiba Mais</button>
       </div>
     </section>
     <section>
