@@ -10,11 +10,24 @@
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   --color-primary: #ffc500;
+  --color-copy: #333;
   --default-padding: 1rem;
 }
 
 body {
   padding-top: 7.75rem;
+}
+
+header,
+main,
+footer {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+  /*border: 5px solid rgb(179, 26, 26);*/ /*Borda para visualização da caixa container*/
 }
 
 ul {
@@ -25,15 +38,19 @@ ul {
 .navbar {
   position: fixed;
   z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+}
+
+.navbar__container {
   display: grid;
   grid-template-columns: max-content auto;
   align-items: center;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 7.75rem;
-  background-color: #000;
-  color: #fff;
   padding: 0 1rem;
 }
 
@@ -132,7 +149,8 @@ ul {
 
 .btn:hover,
 .btn:active,
-.btn:focus {
+.btn:focus,
+.btn--intitutional {
   border-color: var(--color-primary);
   background-color: var(--color-primary);
   color: #fff;
