@@ -28,7 +28,6 @@ footer {
 .container {
   max-width: 1140px;
   margin: auto;
-  /*border: 1px solid rgb(179, 26, 26);*/ /*Borda para visualização da caixa container*/
 }
 
 ul {
@@ -82,7 +81,6 @@ ul {
 }
 
 .logo-studion__subtitle {
-  margin-top: 0;
   font-size: 0.97rem;
   font-weight: 300;
   text-align: right;
@@ -113,7 +111,7 @@ ul {
 
 .slide__copy {
   position: absolute;
-  top: 25vh;
+  top: 15vh;
   left: 50vw;
 }
 
@@ -188,11 +186,11 @@ ul {
   display: grid;
   grid-template-columns: auto auto;
   place-items: center;
-  padding: 4.375rem 1rem 4.375rem 0;
+  padding: 4.375rem 0;
 }
 
 .institutional__copy {
-  padding: 0 1.875rem;
+  padding-left: 1.875rem;
   color: var(--color-copy);
 }
 
@@ -362,10 +360,13 @@ ul {
   color: #000;
 }
 
-.footer__end {
-  border-top: 2px solid #fff4;
+.footer hr {
+  margin: 0 1rem;
+}
+
+.footer__end p {
   text-align: center;
   font-size: 0.875rem;
   font-weight: 300;
-  padding: 2.5rem 0;
+  padding: 2.5rem 1rem
 }
